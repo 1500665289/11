@@ -3,16 +3,6 @@ MOREPUPPET.time = 0;
 MOREPUPPET.flag = 0;
 MOREPUPPET.puppetcount = 0;
 
-
-function MOREPUPPET:OnSetHotKey()
-	local tbHotKeys = {
-
-		{ ID = "MOREPUPPET", Name = "开局8傀儡", Type = "开局8傀儡" },
-
-	}
-	return tbHotKeys
-end
-
 function MOREPUPPET:OnHotKey(ID,State)
                 if  1 = 1   then
 		print("开始添加傀儡")
