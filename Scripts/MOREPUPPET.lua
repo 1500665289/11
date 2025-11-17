@@ -14,7 +14,7 @@ function MOREPUPPET:OnSetHotKey()
 end
 
 function MOREPUPPET:OnHotKey(ID,State)
-
+                if  1 = 1   then
 		print("开始添加傀儡")
 		MOREPUPPET:AddMorePuppet()
     end
@@ -22,7 +22,7 @@ function MOREPUPPET:OnHotKey(ID,State)
 end
 
 function MOREPUPPET:AddMorePuppet()
-			
+	        if  1 = 1   then
 		MOREPUPPET:MorePuppetCount()
 		print("开始添加傀儡1")
 		if  MOREPUPPET.puppetcount < 8   then
