@@ -3,15 +3,7 @@ MOREPUPPET.time = 0;
 MOREPUPPET.flag = 0;
 MOREPUPPET.puppetcount = 0;
 
-function MOREPUPPET:OnHotKey(ID,State)
-               if  MOREPUPPET.puppetcount < 8   then
-		print("开始添加傀儡")
-		MOREPUPPET:AddMorePuppet()
-    end
-
-end
-
-function MOREPUPPET:AddMorePuppet()
+function Hui:OnEnter()
 	        if  MOREPUPPET.puppetcount < 8   then
 		MOREPUPPET:MorePuppetCount()
 		print("开始添加傀儡1")
