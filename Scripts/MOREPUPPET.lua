@@ -7,7 +7,7 @@ MOREPUPPET.puppetcount = 0;
 function MOREPUPPET:OnSetHotKey()
 	local tbHotKeys = {
 
-		{ ID = "MOREPUPPET", Name = "开局8傀儡", Type = "开局8傀儡", InitialKey1 = "LeftShift + W", InitialKey2 = "RightShift + W" },
+		{ ID = "MOREPUPPET", Name = "开局8傀儡", Type = "开局8傀儡" },
 
 	}
 	return tbHotKeys
@@ -15,7 +15,6 @@ end
 
 function MOREPUPPET:OnHotKey(ID,State)
 
-	if ID == "MOREPUPPET" and State == "down" then 
 		print("开始添加傀儡")
 		MOREPUPPET:AddMorePuppet()
     end
@@ -23,8 +22,7 @@ function MOREPUPPET:OnHotKey(ID,State)
 end
 
 function MOREPUPPET:AddMorePuppet()
-	if CS.XiaWorld.FightMapMgr.Instance.MapSchool == 0 then
-		
+			
 		MOREPUPPET:MorePuppetCount()
 		print("开始添加傀儡1")
 		if  MOREPUPPET.puppetcount < 8   then
